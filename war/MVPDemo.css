@@ -1,0 +1,45 @@
+/** Add css rules here for your application. */
+body {
+	text-align: center;
+}
+
+.vPanelBottom {
+	width: 100%;
+}
+
+.arrow:active {
+	background-color: #89d228;
+}
+
+.reset {
+	margin-right: 55px;
+}
+
+.undo {
+	margin-left: 55px;
+}
+
+.hAddTwoButton {
+	margin:auto;
+	padding-top: 15px
+}
+
+.vInputPanel {
+	padding: 20px;
+	text-align: center;
+}
+
+.decoratedSelectLevelPanel {
+	border: 2px solid #cc0000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background: #6c9730;
+	background: linear-gradient(to right, #8dc63f, #d8ad45, #3b4b94);
+}
+
+.menucss:active{
+	background-image: url("image/pressed.png");
+}

@@ -1,0 +1,2 @@
+serviceClass: com.course.mvp.demo.client.GreetingService
+path: D4EC5703ED3386FA7286A4C2CA86676A.gwt.rpc
