@@ -9,7 +9,6 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
-import com.googlecode.mgwt.ui.client.MGWTStyle;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionCallback;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionsDialogEntry;
@@ -36,8 +35,6 @@ public class HomeViewGwtImpl implements IsWidget {
 
 	public HomeViewGwtImpl() {
 		headerPanel.setCenterWidget(sokoban);
-		headerPanel.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle()
-				.getListCss().listHeader());
 		main.add(headerPanel);
 		main.add(scrollPanel);
 
