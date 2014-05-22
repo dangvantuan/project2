@@ -5,9 +5,11 @@ import java.util.List;
 import com.course.mvp.demo.client.activities.sokoban.BHTouchImage;
 import com.course.mvp.demo.client.activities.sokoban.dataresources.DataResources;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
+import com.googlecode.mgwt.ui.client.MGWTStyle;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionCallback;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionsDialogEntry;
@@ -24,6 +26,7 @@ public class HomeViewGwtImpl implements IsWidget {
 	LayoutPanel main = new LayoutPanel();
 	WidgetList widgetList = new WidgetList();
 	HeaderPanel headerPanel = new HeaderPanel();
+	HTML sokoban = new HTML("Sokoban");
 	ScrollPanel scrollPanel = new ScrollPanel();
 	Image mario;
 	BHTouchImage menu;
@@ -32,6 +35,9 @@ public class HomeViewGwtImpl implements IsWidget {
 	final DataResources res = DataResources.IMPL;
 
 	public HomeViewGwtImpl() {
+		headerPanel.setCenterWidget(sokoban);
+		headerPanel.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle()
+				.getListCss().listHeader());
 		main.add(headerPanel);
 		main.add(scrollPanel);
 
